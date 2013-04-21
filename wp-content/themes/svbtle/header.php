@@ -77,13 +77,13 @@
 				<?php if (!empty($options['contact_email'])): ?>
 					<li class="link email">
 						<a href="mailto:<?php echo $options['contact_email'] ?>">						
-							say hello</a> 
+							Email</a> 
 					</li>
 				<?php endif ?>
 			
 				<?php if ($options['rss-link']): ?>
 					<li class="link feed">
-				      <a href="<?php bloginfo('rss_url'); ?>">feed</a>
+				      <a href="<?php bloginfo('rss_url'); ?>">RSS</a>
 				    </li>		
 				<?php endif ?>		
 		
