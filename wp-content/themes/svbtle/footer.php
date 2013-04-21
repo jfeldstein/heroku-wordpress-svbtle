@@ -546,5 +546,15 @@
 </script>
 		
 		<?php wp_footer(); ?>
+		
+<?php 
+// Requote
+// http://requote.it/
+<link rel="stylesheet" href="http://requote.it/requote-v1/requote.css"> //replace with your own css styling if desired
+<script type="text/javascript">var twitterUsername = 'jfeldstein';</script>
+<script type="text/javascript" src="http://requote.it/requote-v1/requote.js"></script>
+
+
+
 	</body>
 </html>
