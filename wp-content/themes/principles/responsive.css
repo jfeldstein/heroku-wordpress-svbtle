@@ -1,0 +1,70 @@
+/*-------------------------------------------------------------------------------------------*/
+/*- MEDIA QUERIES ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------*/
+/* layouts smaller than 600px, iPhone and mobiles */
+@media only screen and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px) {
+	html {-webkit-text-size-adjust: none;}
+	body{font-size: 15px;}
+	#header-container{float: none; width: auto; padding: 20px 20px 20px; position: relative;}
+	#content-container{float: none; width: auto; min-height: 300px; padding: 50px 20px 40px; margin: 0px; position: relative;}
+	#footer-container{display: block; clear: both; padding: 20px; margin: auto; overflow: hidden;}
+	#footer-widget-container{display: block; padding: 40px 20px; margin: 0;}
+	
+	.logo{margin: 0px;}
+	
+	#menu-drop-button{display: block; float: right; height: 30px; width: 30px; position: absolute; top: 0px; left: 20px;  background: #f0f0f0 url(images/layout/drop-down.png) center no-repeat; background-size: 60px 60px; border-radius: 0px 0px 5px 5px;}
+	
+	ul#nav{display: none; padding: 10px 20px; margin: 20px -20px -20px; background: #333;}
+	ul#nav li{margin: 0px; padding: 10px 0px;}
+	ul#nav li ul{display: none !important;}
+	
+	.blog-main-post-container{min-width: auto;}
+	.blog-main-post-container li.post{padding-bottom: 30px; margin-bottom: 30px;}
+	
+	.post-title{margin: 0px 0px 20px; font-size: 25px; line-height: 30px;}
+	.post-image, .slider{margin: 0px 0px 20px;}
+	.page-intro{font-size: 15px;}
+	
+	.copy blockquote{font-size: 20px; line-height: 1.35em;}
+	
+	.post-meta li.meta-block{clear: both; float: none;}
+	.post-meta li.meta-block.social{clear: both; float: none;}
+	
+	.comment-avatar{margin-bottom:  10px;}
+	.comment .comment-name{margin-bottom: 0px;}
+	.comment .date{position: static; margin: 0 0 10px;}
+	.comment-post{clear:  both; margin:  0;}
+	
+	.portfolio-list li{float: none; width: 100%; margin: 0 0 40px 0;}
+	
+	.show-footer{display: none;}
+
+	/*--------------------------*/
+	/*- FOOTER -----------------*/
+	#header-container .social-icons{display: none;}
+	#header-container .footer-text{display: none;}
+	.footer-widgets .widget{float: none; width: 100%; margin: 0px 0px 30px;}
+	.footer-widgets .widget:last-child{margin-bottom: 0px;}
+	.footer-widgets .widget .widgettitle{margin: 0px 0px 10px;}
+}
+
+/*---------------*/
+/* iPad PORTRAIT */
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+	#header-container{width: 21%; padding: 4% 2%; float: left; margin-bottom: 0px;}
+	.footer-widgets .widget{float: none; width: 100%; margin: 0px 0px 30px;}
+	.footer-widgets .widget:last-child{margin-bottom: 0px;}
+}
+
+
+/*---------------*/
+/* RETINA ICONS  */
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+#menu-drop-button { 
+    background: #f0f0f0 url(images/layout/drop-down.png) center no-repeat;
+    background-size: 60px 60px;
+    height: 30px;
+    width: 30px;
+}
