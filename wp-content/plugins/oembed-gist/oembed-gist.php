@@ -77,7 +77,7 @@ public function shortcode($p)
             $p['id']
         );
         if ($p['file']) {
-            $file = preg_replace('/[\-\.]([a-z]+)$/', '.\1', $p['file']);
+            $file = str_replace('-', '.', $p['file']);
             return sprintf($this->html, $p['id'], '?file='.$file, $noscript);
         } else {
             return sprintf($this->html, $p['id'], '', $noscript);
