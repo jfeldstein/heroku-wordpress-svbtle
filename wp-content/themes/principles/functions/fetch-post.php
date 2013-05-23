@@ -52,6 +52,9 @@ $author = get_option("ocmx_meta_author_post");
 		    <?php endif; ?>         
 	    </ul>
 	    
+      
+    <?php echo do_shortcode( '[manual_related_posts]' ); ?>
+      
 		<!-- Begin Author Block -->
 	    <?php if($author != "false" ): ?>         
 		    <?php global $show_author; ?>
